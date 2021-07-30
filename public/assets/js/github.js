@@ -17,7 +17,7 @@ async function getUser(username) {
 
 async function getRepos(username) {
     try {
-        const { data } = await axios(APIURL + username + '/repos?sort=created')
+        const { data } = await axios(APIURL + username + '/repos?sort=pushed')
 
         addReposToCard(data)
     } catch(err) {
@@ -67,7 +67,7 @@ function addReposToCard(repos) {
             repoEl.classList.add('repo')
             repoEl.href = repo.html_url
             repoEl.target = '_blank'
-            repoEl.innerText = repo.name
+            repoEl.innerText = repo.name.toLowerCase()
 
             reposEl.appendChild(repoEl)
         })
