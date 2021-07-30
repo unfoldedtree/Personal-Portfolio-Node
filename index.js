@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/index', function (req, res) {
-    res.render('index.ejs');
+    res.redirect('/');
 });
 
 app.get('/projects', function (req, res) {
