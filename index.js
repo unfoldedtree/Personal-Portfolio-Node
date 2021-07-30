@@ -14,10 +14,6 @@ app.set('view engine', 'ejs');
 
 app.engine('html', require('ejs').renderFile);
 
-app.listen(3000, () => {
-    console.log("Listening on port 3000.")
-});
-
 app.get('/', function (req, res) {
     res.render('index.html');
 });
@@ -36,5 +32,10 @@ app.get('/hire-me', function (req, res) {
 
 app.get('/resume', function (req, res) {
     res.render('cv.html');
+});
+
+const server = app.listen((process.env.PORT || 3000), () => {
+    const port = server.address().port
+    console.log(`Express is working on port ${port}.`)
 });
 
