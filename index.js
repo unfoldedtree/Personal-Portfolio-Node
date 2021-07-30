@@ -15,23 +15,23 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', function (req, res) {
-    res.render('index.html');
+    res.render('index.ejs');
 });
 
 app.get('/index', function (req, res) {
-    res.render('index.html');
+    res.render('index.ejs');
 });
 
 app.get('/projects', function (req, res) {
-    res.render('projects.html');
+    res.render('projects.ejs');
 });
 
 app.get('/hire-me', function (req, res) {
-    res.render('hire-me.html');
+    res.render('hire-me.ejs');
 });
 
 app.get('/resume', function (req, res) {
-    res.render('cv.html');
+    res.render('cv.ejs');
 });
 
 const server = app.listen((process.env.PORT || 3000), () => {
