@@ -11,7 +11,7 @@ const projectsArray = [
     },
     {
         title: "Notes CRUD App",
-        description: "This web app does stuff.",
+        description: "This web app lets users sign on with Google. Then add notes to a wall. Demonstrates full stack functionality.",
         tech: ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "PassportJS", "Google OAuth"],
         img: "project-screenshot-notes.png",
         url: "www.test-notes.com"
