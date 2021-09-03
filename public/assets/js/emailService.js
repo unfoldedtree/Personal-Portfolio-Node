@@ -16,7 +16,7 @@ if ($('#hireForm')) {
 
     $.ajax({
         method: 'POST',
-        url: 'https://formsubmit.co/wmcmahan14@gmail.com',
+        url: '/service/send',
         dataType: 'json',
         accepts: 'application/json',
         data: {
