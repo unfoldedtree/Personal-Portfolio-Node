@@ -15,11 +15,9 @@
 <body style="background: rgb(0,0,0);">
     <%- include ('partials/nav.ejs') %>
     <main class="page projects-page">
-        <section class="d-flex align-items-center portfolio-block projects-cards" style="height: 100vh;margin-top: -85px;margin-bottom: -155px;">
+        <section class="align-items-center portfolio-block projects-cards" style="position: relative; min-height: 100vh;">
             <div class="container">
-                <div class="heading">
-                    <h2 style="font-size: 60px;color: var(--bs-light);">COMING SOON</h2>
-                    <p style="color: #d5d5d5;">My Projects section is currently under Construction</p><i class="icon ion-android-warning" style="font-size: 250px;margin: 0;padding: 0;color: var(--bs-yellow);"></i>
+                <div id="projects">
                 </div>
             </div>
         </section>
@@ -31,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects-grid-cards.js"></script>
 </body>
 
 </html>
