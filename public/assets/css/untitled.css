@@ -82,7 +82,9 @@
     cursor: pointer;
     width: 500px;
     margin: 1rem;
-    background-color: var(--bs-blue);
+    /* background-color: #0E0E10; */
+    background-color: #1C1C1E;
+    /* background-color: var(--bs-blue); */
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
@@ -104,6 +106,7 @@
 }
 
 .project-info h3 {
+    font-weight: 300;
     display: flex;
     text-align: center;
     margin: 0;
@@ -118,8 +121,8 @@
 }
 
 .overview {
-    background-color: #0E0E10;
-    /* background-color: #1C1C1E; */
+    /* background-color: #0E0E10; */
+    background-color: #1C1C1E;
     color: var(--bs-light);
     padding: 2rem;
     position: absolute;
