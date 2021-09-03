@@ -1,3 +1,5 @@
+const title = document.getElementById("modal-title")
+const body = document.getElementById("modal-body")
 
 if ($('#hireForm')) {
     document.querySelector('#hireForm').addEventListener('submit', (e) => {
@@ -23,9 +25,10 @@ if ($('#hireForm')) {
             name: subject,
             message: emailContent
         },
-        success: (data) => {},
+        success: (data) => { title.innerHTML = data.title; body.innerHTML = data.content },
         error: (err) => {},
-        complete: () => {
+        complete: (data) => {
+            // console.log(data)
             $('#hireForm')[0].reset();
             $('#modal-1').modal('show');
         }

@@ -54,12 +54,13 @@ app.post('/service/send', function (req, res) {
     };
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
+            res.status(500).send({ title: "Whoops!", content: "Unfortunately, there was an issue on the backend and the email did not send. Please try again, I would like to discuss this opportunity further."});
             console.log(error);
         } else {
+            res.status(200).send({ title: "Thanks for reaching out to me!", content: "I look forward to discussing this opportunity further."});
             console.log('Email sent: ' + info.response);
         }
     });
-    res.status(200).send({})
 })
 
 const server = app.listen((process.env.PORT || 3000), () => {
