@@ -181,9 +181,9 @@ body {
   transform: translateY(0);
 }
 
-.double-section {
+/* .double-section {
     min-height: 85vh;
-}
+} */
 
 .carousel-wrapper {
     overflow: hidden;
