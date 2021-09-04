@@ -34,19 +34,18 @@ const projectsArray = [
 
 function addProjectsToDOM () {
     projectsArray.forEach(project => {
-        ({ title, description, tech, img, url  } = project)
         const projectEl = document.createElement('div')
         projectEl.classList.add('project')
         projectEl.innerHTML = `
-            <img src="${IMG_PATH + img}" alt="${title}">
+            <img src="${IMG_PATH + project.img}" alt="${project.title}">
             <div class="project-info">
-                <h3>${title}</h3>
+                <h3>${project.title}</h3>
             </div>
             <div class="overview">
                 <h3>Overview</h3>
-                <p>${description}</p>
+                <p>${project.description}</p>
                 <div class="project-tech">
-                    ${addTechToProject(tech)}
+                    ${addTechToProject(project.tech)}
                 </div>
             </div>
             `
