@@ -9,7 +9,7 @@ html {
 body {
     margin: 0 0 100px;
     /* bottom = footer height */
-    padding: 25px;
+    /* padding: 25px; */
 }
 
 #skillsDiv .organization {
