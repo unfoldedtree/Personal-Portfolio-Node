@@ -64,6 +64,7 @@ body {
 }
 
 .projects-page {
+    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -97,6 +98,20 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 3px;
+    /* transform: translateX(0); */
+    transition: transform 1.5s 0s;
+}
+
+.project.hidden-left {
+    transform: translateX(-100vw)
+}
+
+.project.hidden-right {
+    transform: translateX(100vw)
+}
+
+.project.show-project {
+    transform: translateX(0)
 }
 
 .project img {

@@ -33,9 +33,12 @@ const projectsArray = [
 ]
 
 function addProjectsToDOM () {
+    let count = 0;
     projectsArray.forEach(project => {
         const projectEl = document.createElement('div')
+        const hiddenClass = (count % 2 == 0) ? "hidden-left" : "hidden-right"
         projectEl.classList.add('project')
+        projectEl.classList.add(hiddenClass)
         projectEl.innerHTML = `
             <img src="${IMG_PATH + project.img}" alt="${project.title}">
             <div class="project-info">
@@ -50,6 +53,7 @@ function addProjectsToDOM () {
             </div>
             `
         projectsEl.appendChild(projectEl)
+        count++;
     })
 }
 
@@ -63,5 +67,13 @@ function addTechToProject(techArr) {
     return innerData
 }
 
+function removeHiddenClasses() {
+    document.querySelectorAll('.project').forEach(element => {
+        element.classList.add("show-project")
+    })
+}
+
 addProjectsToDOM()
+
+setTimeout(removeHiddenClasses, 1);
 
