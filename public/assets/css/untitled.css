@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
-* {
+html {
     /* font-family: 'Poppins', sans-serif; */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+    /* bottom = footer height */
+    padding: 25px;
 }
 
 #skillsDiv .organization {
@@ -194,4 +202,14 @@
 .social-icon:hover {
     color: rgb(201, 201, 201) !important;
     background-color: rgb(10, 10, 10) !important;
+}
+
+.page-footer {
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
 }
