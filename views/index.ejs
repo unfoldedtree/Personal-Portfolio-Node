@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
@@ -23,12 +24,15 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio-block photography">
+        <div class="double-section">
+        <section class="portfolio-block photography carousel-wrapper">
             <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-6 col-lg-4 d-flex flex-fill item zoom-on-hover"><a class="d-flex flex-fill" href="#"><img class="img-fluid image" src="assets/img/projects/project-screenshot-movies.png"></a></div>
-                    <div class="col-md-6 col-lg-4 d-flex flex-fill item zoom-on-hover"><a class="d-flex flex-fill" href="#"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-notes.png"></a></div>
-                    <div class="col-md-6 col-lg-4 d-flex flex-fill item zoom-on-hover"><a class="d-flex flex-fill" href="#"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-expenses.png"></a></div>
+                <div class="row g-0 carousel">
+                    <div class="col-md-6 col-lg-4 d-flex flex-fill item carousel-photo"><img class="img-fluid image" src="assets/img/projects/project-screenshot-movies.png"></div>
+                    <div class="col-md-6 col-lg-4 d-flex flex-fill item carousel-photo"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-notes.png"></div>
+                    <div class="col-md-6 col-lg-4 d-flex flex-fill item carousel-photo"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-expenses.png"></div>
+                    <div class="carousel-button-next"><i class="fas fa-chevron-right"></i></div>
+                    <div class="carousel-button-prev"><i class="fas fa-chevron-left"></i></div>
                 </div>
             </div>
         </section>
@@ -39,6 +43,7 @@
                 </div>
             </div>
         </section>
+        </div>
         <section style="border-bottom: 1px solid #000000; padding-bottom: 50px;">
             <div class="container">
                 <div class="heading" style="padding-bottom: 25px;">
@@ -100,6 +105,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 
 </html>
