@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    margin: 0 0 100px;
+    margin: 0 0 155px;
     /* bottom = footer height */
     /* padding: 25px; */
 }
@@ -209,7 +209,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
     width: 100%;
     overflow:hidden;
+    border-top: 1px solid #0b0b0b;
+    height: 155px;
 }
