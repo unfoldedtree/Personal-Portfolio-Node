@@ -1,4 +1,5 @@
 const photos = document.querySelectorAll('.carousel-photo')
+const scrollTriggerDiv = document.getElementById('scroll-trigger')
 
 
 function removeHidden(photo) {
@@ -8,7 +9,17 @@ function removeHidden(photo) {
 }
 
 window.addEventListener('scroll', () => {
-    photos.forEach(photo => {
-        removeHidden(photo)
-    })
+    if ( scrollTriggerDiv.getBoundingClientRect().top <= 100 ) {
+        photos.forEach(photo => {
+            removeHidden(photo)
+        })
+    }
+})
+
+window.addEventListener('load', () => {
+    if ( scrollTriggerDiv.getBoundingClientRect().top <= 100 ) {
+        photos.forEach(photo => {
+            removeHidden(photo)
+        })
+    }
 })
