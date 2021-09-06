@@ -184,8 +184,15 @@ body {
     /* min-height: 85vh; */
 }
 
+.image-container {
+    margin: 0 5%;
+    max-width: 2000px;
+}
+
 .carousel-photo {
+    padding: 5px;
     transform: translateX(-150vw);
+    overflow: hidden;
 }
 
 .carousel-photo.show:nth-of-type(1) {
