@@ -40,11 +40,11 @@ function addProjectsToDOM () {
         projectEl.classList.add('project')
         projectEl.classList.add(hiddenClass)
         projectEl.innerHTML = `
-            <a href="${project.url}" target="_blank" style="text-decoration: none;">
             <img src="${IMG_PATH + project.img}" alt="${project.title}">
             <div class="project-info">
                 <h3>${project.title}</h3>
             </div>
+            <a href="${project.url}" target="_blank" style="text-decoration: none;">
             <div class="overview">
                 <h3>Overview</h3>
                 <p>${project.description}</p>
