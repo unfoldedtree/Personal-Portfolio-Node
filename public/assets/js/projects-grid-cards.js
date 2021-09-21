@@ -7,21 +7,21 @@ const projectsArray = [
         description: "Called OnlyPosts this is a social media app that lets users add friends, see posts, react and like posts on their walls. Users can even customize their information in a profile page. Sign on with Google.",
         tech: ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "PassportJS", "Google OAuth"],
         img: "project-screenshot-social.png",
-        url: "www.test-social.com"
+        url: "https://social-media-crud-app.willmcmahan.repl.co"
     },
     {
         title: "Notes CRUD App",
         description: "This web app lets users sign on with Google. Then add notes to a wall. Demonstrates full stack functionality.",
         tech: ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "PassportJS", "Google OAuth"],
         img: "project-screenshot-notes.png",
-        url: "www.test-notes.com"
+        url: "https://notes-crud-app.willmcmahan.repl.co"
     },
     {
         title: "Transactions App",
         description: "This full stack web app allows you to create accounts and add transactions. Sign on with Google.",
         tech: ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "PassportJS", "Google OAuth"],
         img: "project-screenshot-expenses.png",
-        url: "www.test-transactions.com"
+        url: "https://expense-tracker-crud-app.willmcmahan.repl.co"
     },
     {
         title: "Movies App",
@@ -40,6 +40,7 @@ function addProjectsToDOM () {
         projectEl.classList.add('project')
         projectEl.classList.add(hiddenClass)
         projectEl.innerHTML = `
+            <a href="${project.url}" target="_blank" style="text-decoration: none;">
             <img src="${IMG_PATH + project.img}" alt="${project.title}">
             <div class="project-info">
                 <h3>${project.title}</h3>
@@ -51,6 +52,7 @@ function addProjectsToDOM () {
                     ${addTechToProject(project.tech)}
                 </div>
             </div>
+            </a>
             `
         projectsEl.appendChild(projectEl)
         count++;

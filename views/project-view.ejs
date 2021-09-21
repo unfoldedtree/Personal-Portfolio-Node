@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <%- include ('partials/og-tags.ejs') %>
-    <title>Projects - willmcmahan</title>
+    <title>Project - <%- title %></title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -18,11 +18,11 @@
     <main class="projects-page">
         <section class="projects-cards" style="position: relative;">
             <div class="heading">
-                <h2 style="color: var(--bs-light);">Projects</h2>
+                <h2 style="color: var(--bs-light);"><%- title %></h2>
             </div>
             <div class="container">
-                <div id="projects">
-                </div>
+                <iframe src="<%- url %>" frameborder="0" style="width: 100%; min-height: 100vh;">
+                </iframe>
             </div>
         </section>
     </main>
@@ -32,7 +32,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/projects-grid-cards.js"></script>
 </body>
 
 </html>
