@@ -63,6 +63,14 @@ body {
     border-color: #0961e4;
 }
 
+.btn-project-link {
+    color: var(--bs-blue)
+}
+
+.btn-project-link:hover {
+    color: #0961e4;
+}
+
 .projects-page {
     overflow: hidden;
     padding-top: 100px;
@@ -88,7 +96,6 @@ body {
 }
 
 .project {
-    cursor: pointer;
     width: 500px;
     margin: 1rem;
     /* background-color: #0E0E10; */
@@ -155,6 +162,22 @@ body {
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
     overflow-y: auto;
+}
+
+.overview-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overview-head a {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.overview-head a:last-of-type {
+    margin-left: 10px;
 }
 
 .project-tech {
