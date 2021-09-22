@@ -7,7 +7,7 @@ const projectsArray = [
         description: "Called OnlyPosts this is a social media app that lets users add friends, see posts, react and like posts on their walls. Users can even customize their information in a profile page. Sign on with Google.",
         tech: ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "PassportJS", "Google OAuth"],
         img: "project-screenshot-social.png",
-        git_url: "",
+        git_url: "https://github.com/unfoldedtree/social-media-crud-app",
         web_url: "https://social-media-crud-app.willmcmahan.repl.co"
     },
     {
