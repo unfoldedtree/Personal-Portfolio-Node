@@ -1,112 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <%- include ('partials/og-tags.ejs') %>
-    <title>Home - willmcmahan</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/untitled.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio - Will McMahan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body style="background: rgb(0,0,0);">
-    <%- include ('partials/nav.ejs') %>
-    <main class="page lanidng-page">
-        <section class="d-flex align-items-center portfolio-block block-intro" style="height: 100vh;margin-top: -85px;">
-            <div class="container" id="scroll-trigger">
-                <div class="avatar" style="background: url(&quot;assets/img/avatars/self_resume%20(2).jpg&quot;) center / 150px no-repeat;"></div>
-                <div class="about-me">
-                    <p style="color: #d5d5d5;">Hello! I am <strong>Will McMahan</strong>. I work as a Software Developer. I have a passion for full stack development and creating clean, easy to read coding solutions.</p><a class="btn btn-outline-primary" role="button" href="hire-me">Hire me</a>
-                </div>
-            </div>
-        </section>
-        <div class="double-section">
-        <section class="portfolio-block photography carousel-wrapper">
-            <div class="image-container">
-                <div class="row g-0 carousel">
-                    <div class="col-md-7 col-lg-4 d-flex flex-fill item carousel-photo hidden"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-movies.png"></div>
-                    <div class="col-md-7 col-lg-4 d-flex flex-fill item carousel-photo hidden"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-notes.png"></div>
-                    <div class="col-md-7 col-lg-4 d-flex flex-fill item carousel-photo hidden"><img class="img-fluid flex-fill image" src="assets/img/projects/project-screenshot-expenses.png"></div>
-                    <div class="carousel-button-next" style="display: none;"><i class="fas fa-chevron-right"></i></div>
-                    <div class="carousel-button-prev" style="display: none;"><i class="fas fa-chevron-left"></i></div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio-block call-to-action" style="border-bottom: 1px solid #000000 ;">
-            <div class="container" style="padding: 25px 0px;">
-                <div class="d-flex justify-content-center align-items-center content">
-                    <h3 style="color: var(--bs-light);">Like what you see?</h3><a class="btn btn-outline-primary btn-lg" role="button" href="hire-me">Hire me</a>
-                </div>
-            </div>
-        </section>
-        </div>
-        <section style="border-bottom: 1px solid #000000; padding: 50px; 0px;">
-            <div class="container">
-                <div class="heading" style="padding-bottom: 25px;">
-                    <h2 style="color: var(--bs-light);">Special Skills</h2>
-                </div>
-                <div class="row" style="margin-top: 30px;">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0" style="background: rgba(0,0,0,0);">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-code" style="background: var(--bs-blue);"></i></div>
-                            <div class="card-body" style="background: #010101;">
-                                <h3 class="card-title" style="color: var(--bs-light);background: rgba(0,0,0,0);">Frontend Development</h3>
-                                <p class="card-text" style="color: #d5d5d5;">What good is an efficient, clean backend if the user interface has no rhyme or reason? I've used ReactJS for free time projects but most of my professional experience is in favor of Angular and AngularJS. But, I can whip up something clean and minimal with just some Bootstrap too!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0" style="background: rgba(0,0,0,0);">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline" style="background: var(--bs-blue);"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title" style="color: var(--bs-light);background: rgba(0,0,0,0);">Backend Solutions</h3>
-                                <p class="card-text" style="color: #d5d5d5;">Solid professional experience creating backend services in Java while leveraging Spring Boot and the Grails Framework. Free time projects often utilizing NodeJS. My favorite back end contribution to date was creating dynamic QR codes with links to job postings so company recruiters can generate business cards for jobs at college job fairs. All the recipient has to do is scan the code to go to the job posting online!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0" style="background: rgba(0,0,0,0);">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline" style="background: var(--bs-blue);"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title" style="color: var(--bs-light);background: rgba(0,0,0,0);">Forever a Student</h3>
-                                <p class="card-text" style="color: #d5d5d5;">The best thing a developer can ever do is acknowledge that languages and frameworks are just tools for our toolbox. Being efficient, flexible, and open to learn are easily more important to me than my technical skills. I may prefer certain tools but I am always willing to learn how to use something new!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <section class="portfolio-block website" style="background: var(--bs-blue);">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3 style="color: var(--bs-light);">Current Project</h3>
-                    <p style="color: #d5d5d5;">At the moment, I am working a NodeJS API paired with a basic GUI frontend that will allow me to manage a central repository for user accounts, permissions, and roles for all upcoming projects, This will allow me to spin up projects faster because I can just preconfigure users and permission levels in a simple interface.</p>
-                </div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup">
-                        <div class="screen" style="background: #d5d5d5;border-style: none;border-top-style: none;">
-                            <div class="screen-content" style="background: url(&quot;assets/img/tech/sample-code-2.png&quot;) center / cover no-repeat;transform: perspective(0px) translate(0px);border-style: none;"></div>
-                        </div>
-                        <div class="keyboard" style="background: #d5d5d5;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <%- include ('partials/footer.ejs') %>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/index.js"></script>
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <%- include ('partials/header.ejs') %>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <%- include ('partials/hero.ejs') %>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <%- include ('partials/about.ejs') %>
+    <!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <%- include ('partials/facts.ejs') %>
+    <!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <%- include ('partials/skills.ejs') %>
+    <!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <%- include ('partials/resume.ejs') %>
+    <!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <%- include ('partials/portfolio.ejs') %>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <%- include ('partials/services.ejs') %>
+    <!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <%- include ('partials/contact.ejs') %>
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <%- include ('partials/footer.ejs') %>
+  <!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/projects-cards.js"></script>
+  <script src="assets/js/github.js"></script>
+  <script src="assets/js/emailService.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
