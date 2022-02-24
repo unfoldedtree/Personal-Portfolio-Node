@@ -28,20 +28,8 @@ app.get('/', function (req, res) {
     res.render('index.ejs');
 });
 
-app.get('/index', function (req, res) {
+app.get('/*', function (req, res) {
     res.redirect('/');
-});
-
-app.get('/projects', function (req, res) {
-    res.render('projects.ejs');
-});
-
-app.get('/hire-me', function (req, res) {
-    res.render('hire-me.ejs');
-});
-
-app.get('/resume', function (req, res) {
-    res.render('cv.ejs');
 });
 
 app.post('/service/send', function (req, res) {
