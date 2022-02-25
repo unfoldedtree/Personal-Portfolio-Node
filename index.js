@@ -62,6 +62,10 @@ app.get('/', function (req, res) {
     res.render('index.ejs');
 });
 
+app.get('/assets/img/open-graph/ogimage.jpg', function (req, res) {
+    res.render('/assets/img/open-graph/ogimage.jpg')
+})
+
 app.get('/*', function (req, res) {
     res.redirect('/');
 });
