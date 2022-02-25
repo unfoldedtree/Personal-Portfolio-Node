@@ -945,20 +945,54 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact #contact-form .form-group {
+.contact #contact-form #name,
+.contact #contact-form #email {
   margin-bottom: 15px;
 }
 .contact #contact-form label {
   padding-bottom: 8px;
 }
-.contact #contact-form input, .contact #contact-form textarea {
+.contact #contact-form input, 
+.contact #contact-form select,
+.contact #contact-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
-.contact #contact-form input {
+.contact #contact-form input, 
+.contact #contact-form select {
   height: 44px;
 }
+
+.contact #contact-form .form-checkbox {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.contact #contact-form .form-checkbox .form-check-label {
+    margin-right: 1.5em;
+    padding: 0;
+}
+
+.contact #contact-form .form-checkbox .form-check-input {
+    width: 2em;
+    margin: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    border-color: #149ddd;
+    background-position: top center;
+    border-radius: 2em;
+    transition: background-position .15s ease-in-out;
+    transform: rotate(270deg);
+}
+
+.contact #contact-form .form-checkbox .form-check-input:checked {
+    background-position: bottom center;
+    background-color: #149ddd;
+    border-color: #149ddd;
+}
+
 .contact #contact-form textarea {
   padding: 10px 15px;
 }

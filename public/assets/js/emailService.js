@@ -1,38 +1,32 @@
 if ($('#contact-form')) {
     document.querySelector('#contact-form').addEventListener('submit', (e) => {
-        
-    e.preventDefault();
-
-    const thisForm = document.querySelector('#contact-form');
-    thisForm.querySelector('.loading').classList.add('d-block');
-    thisForm.querySelector('.error-message').classList.remove('d-block');
-    thisForm.querySelector('.sent-message').classList.remove('d-block');
-
-    email_form_submit(thisForm);
-});
+            
+        e.preventDefault();
+    
+        const thisForm = document.querySelector('#contact-form');
+        thisForm.querySelector('.loading').classList.add('d-block');
+        thisForm.querySelector('.error-message').classList.remove('d-block');
+        thisForm.querySelector('.sent-message').classList.remove('d-block');
+    
+        email_form_submit(thisForm);
+    });
 }
 
 function email_form_submit(thisForm) {
 
-    // let subject = $('#subject').val();
-    // let remote = $('#remote');
-    // let email = $('#email').val();
-    // let message = $('#message').val();
-    // let hireDate =( $('#hire-date').val() ) ? $('#hire-date').val() : (new Date()).toLocaleDateString('fr-CA'); 
-
     let name = $('#name').val();
     let email = $('#email').val();
     let subject = $('#subject').val();
+    subject +=  ` - ${$('#jobType').val()}`;
+    let remote = $('#remote');
     let message = $('#message').val();
     let hireDate =( $('#hire-date').val() ) ? $('#hire-date').val() : (new Date()).toLocaleDateString('fr-CA'); 
 
     let emailContent = `DATE: ${hireDate}\nNAME: ${name}\nEMAIL: ${email}\nMESSAGE: ${message}`;
     
-    // if ($('#remote:checked')) {
-    //     subject += " (REMOTE)";
-    // }
-    console.log("Email Body")
-    console.log(emailContent)
+    if ($('#remote').is(':checked')) {
+        subject += " (REMOTE)";
+    }
 
     $.ajax({
         method: 'POST',
@@ -60,7 +54,6 @@ function displaySuccess(thisForm) {
     thisForm.querySelector('.sent-message').classList.add('d-block');
 
     setTimeout(() => {
-        thisForm.querySelector('.sent-message').innerHTML = "";
         thisForm.querySelector('.sent-message').classList.remove('d-block');
     }, 12000)
 }
